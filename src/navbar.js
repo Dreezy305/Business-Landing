@@ -4,7 +4,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/">
             {/*<img
