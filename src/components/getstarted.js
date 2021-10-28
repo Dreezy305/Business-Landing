@@ -2,7 +2,7 @@ import React from "react";
 
 function GetStarted() {
   return (
-    <section className="mt-5 pt-5 mb-5">
+    <section className="mt-5 pt-5 mb-5 pb-5">
       <div className="container getStarted">
         <div className="row justify-content-around">
           <div className="col-md-7">

@@ -14,7 +14,7 @@ function Company() {
     { id: 5, logo: Monster },
   ];
   return (
-    <section className="border-bottom">
+    <section className="border-bottom mb-5">
       <div className="container company ">
         <div className="row company_box align-items-baseline justify-content-evenly mt-2 pb-2">
           {logos.map((item) => (

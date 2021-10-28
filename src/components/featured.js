@@ -51,12 +51,12 @@ function Featured() {
     <section className="mt-5 pt-5">
       <div className="container featured">
         <div className="row text-center">
-          <h1 className="fw-bold mb-2">Featured Reviews</h1>
-          <p className="mt-2">
+          <h1 className="fw-bold mb-4">Featured Reviews</h1>
+          <p className="mt-2 mb-4">
             Here are some from the review been done by some of the employees on
             this platform.
           </p>
-          <div className="container">
+          <div className="container mt-4 mb-3">
             <div className="row justify-content-evenly">
               {reviews.map((item) => (
                 <div className="card featured_card p-2 mb-5">
@@ -92,7 +92,7 @@ function Featured() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-row justify-content-center mb-5">
+      <div className="d-flex flex-row justify-content-center mb-5 pb-3">
         <div className="dot1 me-2"></div>
         <div className="dot2 me-2"></div>
         <div className="dot2"></div>

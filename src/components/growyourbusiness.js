@@ -38,7 +38,7 @@ function GrowYourBusiness() {
           </div>
         </div>
 
-        <div className="grow_box--quote position-relative">
+        <div className="grow_box--quote position-relative pb-5 mb-5">
           <FontAwesomeIcon
             icon="quote-left"
             color="#FF6634"

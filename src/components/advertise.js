@@ -7,7 +7,7 @@ function Advertise() {
     { id: 2, content: "ADVERTISEMENT" },
   ];
   return (
-    <section className="mt-5 pt-5">
+    <section className="mt-5 py-5 mb-5 pb-5">
       <div className="container advert pb-3">
         <div className="row justify-content-evenly">
           {advertArray.map((item) => (
