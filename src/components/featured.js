@@ -19,6 +19,7 @@ function Featured() {
     const starsArray = [1, 2, 3, 4, 5, 6];
     const numberOfFilledStars = starsArray.slice(0, stars);
     const numberOfOpenStars = stars < 5 ? starsArray.slice(0, 5 - stars) : [];
+    const numberOfHalffiledstars = "";
     return (
       <>
         {numberOfFilledStars.map((item, index) => (

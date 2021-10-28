@@ -4,6 +4,7 @@ import "./styles/globals.scss";
 
 import Navbar from "./navbar";
 import Featured from "./components/featured";
+import Subscribe from "./components/subscribe";
 
 function App() {
   return (
@@ -11,9 +12,14 @@ function App() {
       <Navbar />
       <main>
         <Featured />
+        <Subscribe />
       </main>
     </div>
   );
 }
 
 export default App;
+
+
+
+

@@ -120,6 +120,53 @@
   }
 }
 
+/** SUBSCRIBE*/
+.subscribe {
+  background: #f8f8f8;
+  h1 {
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 35px;
+    color: #303030;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    width: 557px;
+    color: #8d8d8d;
+  }
+  input[type="text"] {
+    border-radius: 6px;
+    background: #ffffff;
+    width: 479px;
+    height: 54px;
+    border: #ffffff;
+    &::placeholder {
+      color: #dedede;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  button {
+    border-radius: 4px;
+    background: #ff6634;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 21px;
+    width: 133px;
+    height: 54px;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &_mail {
+    background-image: url(../assets/mail.png);
+    background-repeat: no-repeat;
+    background-position: right 45px center;
+  }
+}
+
 /** MOBILE RESPONSIVENESS*/
 @media screen and (max-width: 576px) {
   .menu {
