@@ -54,6 +54,36 @@
     background-position: right -80px center;
     background-size: contain;
     background-position-y: 50px;
+    transition: 3s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    @keyframes animate {
+      0% {
+        background-image: url(../assets/pexels-pixabay-220453-removebg-preview.png);
+      }
+      20% {
+        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+      }
+      40% {
+        background-image: url(../assets/pexels-pixabay-38554-removebg-preview.png);
+      }
+      60% {
+        background-image: url(../assets/pexels-tomaz-barcellos-1987301-removebg-preview.png);
+      }
+      80% {
+        background-image: url(../assets/pexels-tuấn-kiệt-jr-1382731-removebg-preview.png);
+      }
+      100% {
+        background-image: url(../assets/hero.png);
+      }
+    }
     h1 {
       @extend .DefaultTextStyles;
       font-weight: 900;
