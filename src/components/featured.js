@@ -92,6 +92,11 @@ function Featured() {
           </div>
         </div>
       </div>
+      <div className="d-flex flex-row justify-content-center mb-5">
+        <div className="dot1 me-2"></div>
+        <div className="dot2 me-2"></div>
+        <div className="dot2"></div>
+      </div>
     </section>
   );
 }
