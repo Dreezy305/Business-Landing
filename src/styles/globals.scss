@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
 
+.DefaultTextStyles {
+  font-style: normal;
+  font-weight: normal;
+}
+
 .menu {
   a {
     font-family: "Montserrat";
@@ -29,6 +34,90 @@
   color: #ff6634 !important;
   border: 1px solid #ff6634 !important;
   border-radius: 4px;
+}
+
+/**FEATURED REVIEWS*/
+.featured {
+  h1 {
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 35px;
+    color: #303030;
+    font-style: normal;
+  }
+  p {
+    @extend .DefaultTextStyles;
+    color: #8d8d8d;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &_card {
+    background: #ffffff;
+    width: 290px;
+    height: 220px;
+    border: 1px solid #fbfbfb;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    span {
+      font-size: 11px;
+      line-height: 13px;
+      color: #000000 !important;
+    }
+    p {
+      @extend .DefaultTextStyles;
+      font-size: 12px;
+      line-height: 15px;
+      color: #8d8d8d !important;
+      width: 183px;
+      height: 59px;
+      text-align: justify;
+    }
+    &--mid {
+      p {
+        color: #ff6634 !important;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        background: rgba(255, 102, 52, 0.05);
+        border-radius: 6px;
+        width: max-content;
+        height: 19px;
+        span {
+          background: #ffffff !important;
+          color: #000000 !important;
+          font-weight: 600;
+          font-style: normal;
+        }
+      }
+    }
+    &--bottom {
+      background: #fcfcfc;
+      border-radius: 0px 0px 6px 6px;
+      width: inherit;
+      height: 64px;
+      overflow: hidden;
+      padding-bottom: 20px;
+      box-shadow: 25px 0px 0px 0px #fcfcfc, -25px 0px 0px 0px #fcfcfc;
+      img {
+        margin-right: 15px;
+        margin-top: 10px;
+        float: left;
+      }
+      h5 {
+        font-size: 12px;
+        //line-height: 15px;
+        color: #6c6c6c;
+        margin-right: 115px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 11px;
+        //line-height: 13px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 /** MOBILE RESPONSIVENESS*/

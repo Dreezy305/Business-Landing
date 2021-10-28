@@ -4,9 +4,9 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             {/*<img
               src="./images/pied-piper-alt-brands.svg"
               alt="navbar logo"
@@ -14,7 +14,7 @@ function Navbar() {
               height="24"
               class="d-inline-block align-text-top"
             />*/}
-            Navbar
+            {/*Navbar*/}
           </a>
           <button
             class="navbar-toggler"
