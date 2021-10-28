@@ -192,8 +192,12 @@
 /**ADVERT*/
 .advert {
   &_card {
-    width: 387px;
-    height: 317px;
+    background: #fbfbfb;
+    width: 300px !important;
+    height: 240px;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    border-radius: 4px;
     h1 {
       @extend .DefaultTextStyles;
       font-size: 20px;
