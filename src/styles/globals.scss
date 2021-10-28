@@ -5,6 +5,7 @@
   font-weight: normal;
 }
 
+/**NAV BAR*/
 .menu {
   background: #ffffff;
   a {
@@ -35,6 +36,25 @@
   color: #ff6634 !important;
   border: 1px solid #ff6634 !important;
   border-radius: 4px;
+}
+
+/**GROW YOUR BUSINESS*/
+.grow {
+  background: #ffebff;
+  height: 650px;
+  background-image: url(../assets/lines.png);
+  background-repeat: no-repeat;
+  background-position: right 190px center;
+  background-size: contain;
+  background-origin: content-box, padding-box;
+  &_box {
+    height: inherit;
+    background-image: url(../assets/hero.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    background-position-y: 50px;
+  }
 }
 
 /**FEATURED REVIEWS*/
@@ -208,6 +228,78 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/**GET STARTED*/
+.getStarted {
+  background: #ffebff;
+  border: 1px solid #ffebff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 180px;
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #303030;
+  }
+  button {
+    @extend .DefaultTextStyles;
+    background: #ff6634;
+    border-radius: 4px;
+    height: 54px;
+    font-size: 17px;
+    line-height: 21px;
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &_btn {
+    background-image: url(../assets/Rectangle39.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+/**FOOTER*/
+.footer {
+  background: #1f2131;
+  &_col1 {
+    p {
+      color: #ffffff;
+      width: 379px;
+      font-size: 15px;
+      line-height: 145%;
+    }
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid #393c4d;
+    }
+    &--p {
+      font-size: 13px;
+      line-height: 145.8%;
+      color: #ffffff;
+      opacity: 0.4;
+    }
+  }
+  &_col2 {
+    color: #ffffff;
+    h5 {
+      @extend .DefaultTextStyles;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+    }
+    h6 {
+      font-size: 13px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.6);
+      opacity: 0.6;
     }
   }
 }
