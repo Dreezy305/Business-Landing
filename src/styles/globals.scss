@@ -36,6 +36,9 @@
   color: #ff6634 !important;
   border: 1px solid #ff6634 !important;
   border-radius: 4px;
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 /**GROW YOUR BUSINESS*/
@@ -54,7 +57,7 @@
     background-position: right -80px center;
     background-size: contain;
     background-position-y: 50px;
-    transition: 5s ease-in-out;
+    transition: 3s ease-in-out;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -65,23 +68,28 @@
     animation-timing-function: ease-in-out;
 
     @keyframes animate {
-      0% {
+      0%,
+      90% {
         background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
         //background-position-y: 50px;
       }
-      20% {
+      20%,
+      39% {
         background-image: url(../assets/hero.png);
         //background-position-y: 50px;
       }
-      40% {
+      40%,
+      59% {
         background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
         //background-position-y: 50px;
       }
-      60% {
+      60%,
+      79% {
         background-image: url(../assets/hero.png);
         //background-position-y: 50px;
       }
-      80% {
+      80%,
+      99% {
         background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
         //background-position-y: 50px;
       }
@@ -337,6 +345,9 @@
     &:hover {
       color: #ffffff;
     }
+    &:focus {
+      box-shadow: none;
+    }
   }
   &_mail {
     background-image: url(../assets/mail.png);
@@ -411,6 +422,9 @@
     outline: 0;
     &:hover {
       color: #ffffff;
+    }
+    &:focus {
+      box-shadow: none;
     }
   }
   &_btn {

@@ -8,3 +8,26 @@
   background: #ffffff !important;
   border-radius: 0px !important;
 }
+
+.blockquote {
+  max-width: 344px;
+  margin: 0px 0px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.blockquote_text {
+  margin: 0;
+}
+
+.blockquote_text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.blockrightQuote {
+  text-align: right;
+}
+
+.blockquote--quoted::before {
+  content: url(/src/assets/quote.svg);
+}
