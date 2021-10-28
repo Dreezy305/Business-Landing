@@ -7,7 +7,7 @@ function Subscribe() {
         <div className="row ">
           <div className="col-md-6 p-5">
             <h1 className="fw-bold mb-2">Subscribe to our Newsletter</h1>
-            <p className="mt-1 mb-3">
+            <p className="mt-1 mb-4">
               Get latest update lorem Ipsum is that it has a more-or-less normal
               distribution of letters, as opposed to using 'Content here,
               content here

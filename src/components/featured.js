@@ -1,18 +1,23 @@
 import React from "react";
 import Star from "../assets/star.svg";
 import Briefcase from "../assets/briefcase.svg";
-import Ellipse1 from "../assets/ellipse1.svg";
+import Ellipse1 from "../assets/Ellipse1.png";
+import Ellipse2 from "../assets/Ellipse2.png";
+import Ellipse3 from "../assets/Ellipse3.png";
+import Ellipse4 from "../assets/Ellipse4.png";
+import Ellipse5 from "../assets/Ellipse5.png";
+import Ellipse6 from "../assets/Ellipse6.png";
 import unfilledstar from "../assets/unfilledstar.svg";
 import Bistar from "../assets/bistar.svg";
 
 function Featured() {
   const reviews = [
-    { id: 1, review: "sexual assault", company: "Google" },
-    { id: 2, review: "nepotism", company: "Apple" },
-    { id: 3, review: "racism", company: "Google" },
-    { id: 4, review: "sexual assault", company: "Starbuck" },
-    { id: 5, review: "racism", company: "Facebook" },
-    { id: 6, review: "racism", company: "Google" },
+    { id: 1, review: "sexual assault", company: "Google", pic: Ellipse1 },
+    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2 },
+    { id: 3, review: "racism", company: "Google", pic: Ellipse3 },
+    { id: 4, review: "sexual assault", company: "Starbuck", pic: Ellipse4 },
+    { id: 5, review: "racism", company: "Facebook", pic: Ellipse5 },
+    { id: 6, review: "racism", company: "Google", pic: Ellipse6 },
   ];
 
   const renderStars = (stars) => {
@@ -76,7 +81,7 @@ function Featured() {
                       </p>
                     </div>
                     <div className="featured_card--bottom pb-2">
-                      <img src={Ellipse1} className="" alt="..." />
+                      <img src={item.pic} className="" alt="..." />
                       <h5 className="">Anonymous</h5>
                       <p className="">Business Analysis</p>
                     </div>
