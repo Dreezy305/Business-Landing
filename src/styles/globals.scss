@@ -122,9 +122,10 @@
 }
 
 /** SUBSCRIBE*/
-.subscribe {
+.sub {
   background: #f8f8f8;
-  box-shadow: 120px 0px 0px 0px #f8f8f8, -120px 0px 0px 0px #f8f8f8;
+}
+.subscribe {
   h1 {
     font-weight: 800;
     font-size: 29px;
@@ -184,6 +185,25 @@
       &:hover {
         filter: grayscale(120);
       }
+    }
+  }
+}
+
+/**ADVERT*/
+.advert {
+  &_card {
+    width: 387px;
+    height: 317px;
+    h1 {
+      @extend .DefaultTextStyles;
+      font-size: 20px;
+      color: #c2c2c2;
+      font-weight: 600;
+      line-height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

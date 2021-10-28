@@ -6,6 +6,7 @@ import Navbar from "./navbar";
 import Featured from "./components/featured";
 import Subscribe from "./components/subscribe";
 import Company from "./components/company";
+import Advertise from "./components/advertise";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Featured />
         <Subscribe />
         <Company />
+        <Advertise />
       </main>
     </div>
   );
