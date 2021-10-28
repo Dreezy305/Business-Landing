@@ -7,7 +7,7 @@ function Footer() {
   const social = [
     { id: 1, icon: FaceBook },
     { id: 2, icon: Twitter },
-    { id: 3, icon: Linkedln },
+    { id: 3, icon: Linkedln, styles: { zIndex: "10" } },
   ];
   return (
     <section className="footer mt-5 pt-5">
@@ -20,7 +20,12 @@ function Footer() {
             </p>
             <div className="d-flex flex-row pb-3 mb-3">
               {social.map((item) => (
-                <img src={item.icon} className="p-3 me-2" alt="...." />
+                <img
+                  src={item.icon}
+                  className="p-3 me-2"
+                  alt="...."
+                  style={{ ...item.styles }}
+                />
               ))}
             </div>
             <p className="footer_col1--p mb-2">
