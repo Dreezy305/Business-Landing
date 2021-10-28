@@ -1,11 +1,39 @@
 import React from "react";
+import Card from "../assets/card.png";
+import Card2 from "../assets/card2.png";
+import Card3 from "../assets/card3.png";
 
 function GrowYourBusiness() {
   return (
     <section className="mt-3 mb-5 pb-5 grow">
-      <div className="container grow_box game">
+      <div className="container position-relative grow_box">
+        {/*<div className="">*/}
+        <img src={Card} className="bgImage1 position-absolute" alt="..." />
+        <img src={Card2} className="bgImage2 position-absolute" alt="..." />
+        <img src={Card3} className="bgImage3 position-absolute" alt="..." />
+        {/*</div>*/}
         <div className="row">
-          <div className="col-md-6"></div>
+          <div className="col-md-6 pt-5 ">
+            <h1 className="mt-5 pt-5 py-4">
+              Grow your business with real-time reviews
+            </h1>
+            <p>
+              Find out more on what people and saying about your company, with
+              real time reveiw and data.
+            </p>
+            <div className="d-flex flex-row grow_box--input">
+              <input
+                type="text"
+                className="px-4"
+                placeholder="Search for companies"
+              />
+              <button type="button">Search</button>
+            </div>
+            <p className="mt-3 grow_box--p">
+              <span className="me-1">Already have an account?</span>
+              <span>Sign In</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
