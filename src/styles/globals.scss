@@ -54,7 +54,7 @@
     background-position: right -80px center;
     background-size: contain;
     background-position-y: 50px;
-    transition: 3s;
+    transition: 5s ease-in-out;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -66,19 +66,24 @@
 
     @keyframes animate {
       0% {
-        background-image: url(../assets/pexels-pixabay-220453-removebg-preview.png);
+        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+        //background-position-y: 50px;
       }
       20% {
-        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+        background-image: url(../assets/hero.png);
+        //background-position-y: 50px;
       }
       40% {
-        background-image: url(../assets/pexels-pixabay-38554-removebg-preview.png);
+        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+        //background-position-y: 50px;
       }
       60% {
-        background-image: url(../assets/pexels-tomaz-barcellos-1987301-removebg-preview.png);
+        background-image: url(../assets/hero.png);
+        //background-position-y: 50px;
       }
       80% {
-        background-image: url(../assets/pexels-tuấn-kiệt-jr-1382731-removebg-preview.png);
+        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+        //background-position-y: 50px;
       }
       100% {
         background-image: url(../assets/hero.png);
@@ -145,7 +150,28 @@
         }
       }
     }
+    &--quote {
+      margin-left: -60px;
+      margin-top: 95px;
+      p {
+        @extend .DefaultTextStyles;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8d8d8d;
+        width: 344px;
+        margin: 30px;
+      }
+    }
   }
+}
+
+.leftQuote {
+  position: absolute !important;
+  top: 36px;
+  left: 350px;
+}
+
+.rightQuote {
 }
 
 /**BACKGROUND IMAGES*/

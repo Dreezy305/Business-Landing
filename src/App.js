@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import "./styles/globals.scss";
+import "./FontawesomeIcons";
 
 import Navbar from "./navbar";
 import GrowYourBusiness from "./components/growyourbusiness";

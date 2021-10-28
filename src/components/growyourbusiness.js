@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "../assets/card.png";
 import Card2 from "../assets/card2.png";
 import Card3 from "../assets/card3.png";
@@ -17,6 +18,7 @@ function GrowYourBusiness() {
             <h1 className="mt-5 pt-5 py-4">
               Grow your business with real-time reviews
             </h1>
+
             <p>
               Find out more on what people and saying about your company, with
               real time reveiw and data.
@@ -34,6 +36,23 @@ function GrowYourBusiness() {
               <span>Sign In</span>
             </p>
           </div>
+        </div>
+
+        <div className="grow_box--quote position-relative">
+          <FontAwesomeIcon
+            icon="quote-left"
+            color="#FF6634"
+            className="position-absolute rightQuote"
+          />
+          <FontAwesomeIcon
+            icon="quote-right"
+            color="#FF6634"
+            className="leftQuote position-absolute"
+          />
+          <p className="">
+            A life spent making mistakes is not only more honorable, but more
+            useful than a life spent doing nothing.
+          </p>
         </div>
       </div>
     </section>
