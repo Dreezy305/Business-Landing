@@ -170,6 +170,23 @@
 }
 
 /**COMPANY*/
+.comapny {
+  padding: 0 0 80px 0;
+  &_box {
+    max-width: 100% !important;
+    height: 3rem !important;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    img {
+      height: 100%;
+      &:hover {
+        filter: grayscale(120);
+      }
+    }
+  }
+}
 
 /** MOBILE RESPONSIVENESS*/
 @media screen and (max-width: 576px) {

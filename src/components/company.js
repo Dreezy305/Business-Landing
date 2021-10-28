@@ -7,7 +7,9 @@ function Company() {
     <section>
       <div className="container company">
         <div className="row company_box">
-          <img src={Indeed} className="img-fluid" alt="..." />
+          <div class="col-md-4 col-lg-2">
+            <img src={Indeed} className="" alt="..." />
+          </div>
         </div>
       </div>
     </section>
