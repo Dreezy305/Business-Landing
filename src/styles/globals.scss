@@ -709,4 +709,27 @@
 }
 
 @media screen and (max-width: 768px) {
+  .grow {
+    &_box {
+      &--input {
+        button {
+          margin-left: 225px;
+          width: 100px;
+        }
+      }
+      &--quote {
+        p {
+          margin: 60px;
+        }
+      }
+    }
+  }
+
+  .rightQuote {
+    left: 5%;
+  }
+
+  .bgImage1 {
+    left: 77% !important;
+  }
 }
