@@ -489,6 +489,49 @@
 
   .featured {
     p {
+      width: 100%;
+      margin: auto;
+    }
+    &_card {
+      width: 80%;
+      p {
+        margin: 0;
+      }
+      &--mid {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        p {
+          &:nth-child(1) {
+            width: auto;
+            white-space: nowrap !important;
+            margin-right: 100px;
+          }
+        }
+      }
+      &--bottom {
+        img {
+          margin-top: 32px !important;
+        }
+        h5 {
+          margin-top: 31px !important;
+          margin-right: 146px !important;
+        }
+      }
+    }
+  }
+
+  .subscribe {
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .App {
+    overflow: hidden;
+  }
+
+  .featured {
+    p {
       width: 90%;
       margin: auto;
     }
@@ -499,9 +542,15 @@
       }
       &--mid {
       }
+      &--bottom {
+        img {
+          margin-top: 30px !important;
+        }
+        h5 {
+          margin-top: 28px !important;
+          margin-right: 310px !important;
+        }
+      }
     }
-  }
-
-  .subscribe {
   }
 }

@@ -36,6 +36,22 @@
   .App {
     overflow: hidden;
   }
+
+  .featuredBottom {
+    white-space: nowrap;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  /*.featuredBottom > img {
+    margin-top: 32px !important;
+  }
+  .featuredBottom > h5 {
+    margin-top: 31px !important;
+    margin-right: 146px !important;
+  }*/
+  /*.featuredBottom > p {
+    padding-bottom: 20px;
+  }*/
 }
 
 @media screen and (max-width: 720px) {

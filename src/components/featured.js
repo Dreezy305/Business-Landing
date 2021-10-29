@@ -80,7 +80,7 @@ function Featured() {
                         <span>{item.company}</span>
                       </p>
                     </div>
-                    <div className="featured_card--bottom pb-2">
+                    <div className="featured_card--bottom featuredBottom pb-2">
                       <img src={item.pic} className="" alt="..." />
                       <h5 className="">Anonymous</h5>
                       <p className="">Business Analysis</p>
