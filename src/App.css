@@ -66,6 +66,16 @@
   .App {
     overflow: hidden;
   }
+  .mobile-toggle {
+    display: none;
+  }
+  .mobile-collapse {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .mobile {
+    display: contents;
+  }
 }
 
 @media screen and (max-width: 1024px) {

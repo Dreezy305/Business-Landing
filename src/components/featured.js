@@ -12,19 +12,34 @@ import Bistar from "../assets/bistar.svg";
 
 function Featured() {
   const reviews = [
-    { id: 1, review: "sexual assault", company: "Google", pic: Ellipse1 },
-    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2 },
-    { id: 3, review: "racism", company: "Google", pic: Ellipse3 },
-    { id: 4, review: "sexual assault", company: "Starbuck", pic: Ellipse4 },
-    { id: 5, review: "racism", company: "Facebook", pic: Ellipse5 },
-    { id: 6, review: "racism", company: "Google", pic: Ellipse6 },
+    {
+      id: 1,
+      review: "sexual assault",
+      company: "Google",
+      pic: Ellipse1,
+      rating: 4,
+    },
+    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2, rating: 5 },
+    { id: 3, review: "racism", company: "Google", pic: Ellipse3, rating: 2 },
+    {
+      id: 4,
+      review: "sexual assault",
+      company: "Starbuck",
+      pic: Ellipse4,
+      rating: 4,
+    },
+    { id: 5, review: "racism", company: "Facebook", pic: Ellipse5, rating: 4 },
+    { id: 6, review: "racism", company: "Google", pic: Ellipse6, rating: 4 },
   ];
 
   const renderStars = (stars) => {
-    const starsArray = [1, 2, 3, 4, 5, 6];
-    const numberOfFilledStars = starsArray.slice(0, stars);
-    const numberOfOpenStars = stars < 5 ? starsArray.slice(0, 5 - stars) : [];
-    const numberOfHalffiledstars = "";
+    const starsArray = [1, 2, 3, 4, 5];
+    const numberOfFilledStars = starsArray.slice(0, 5 - stars);
+    const numberAlt = (stars = 2 ? starsArray.slice(0, 5 - 3) : []);
+    const numberOfOpenStars = (stars = 4 ? starsArray.slice(0, 5 - stars) : []);
+    const numberOfHalf = (stars = 5 ? starsArray.slice(0, 4 - 3) : []);
+    //const otherNumber = numberOfFilledStars = 2 ? starsArray.slice(0, 2) : [];
+
     return (
       <>
         {numberOfFilledStars.map((item, index) => (
@@ -35,14 +50,38 @@ function Featured() {
             className="me-1"
           />
         ))}
-        {numberOfOpenStars.map((item, index) => (
+        {numberOfFilledStars.map((item, index) => (
+          <img
+            // key={index}
+            src={Star}
+            alt="star_filled_icon"
+            className="me-1"
+          />
+        ))}
+        {/*{numberOfOpenStars.map((item, index) => (
           <img
             // key={index}
             src={unfilledstar}
             alt="star_filled_icon"
             className="me-1"
           />
-        ))}
+        ))}*/}
+        {/*{otherNumber.map((item, index) => (
+          <img
+            // key={index}
+            src={unfilledstar}
+            alt="star_filled_icon"
+            className="me-1"
+          />
+        ))}*/}
+        {/*{numberOfHalf.map((item, index) => (
+          <img
+            // key={index}
+            src={Bistar}
+            alt="star_filled_icon"
+            className="me-1"
+          />
+        ))}*/}
       </>
     );
   };
@@ -63,9 +102,7 @@ function Featured() {
                   <div class="card-body">
                     <div className="d-flex flex-row">
                       {/*<img src={Star} className="me-1" alt="..." />*/}
-                      {renderStars(
-                        item.id == 1 || item.id == 3 || item.id == 5
-                      )}
+                      {renderStars(item.rating)}
                       <span className="fw-bold">4.0</span>
                     </div>
                     <p class="card-text text-left mt-2">

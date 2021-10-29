@@ -50,6 +50,7 @@
   background-position: right 100px center;
   background-size: contain;
   background-origin: content-box, padding-box;
+
   &_box {
     height: inherit;
     background-image: url(../assets/hero.png);
@@ -57,7 +58,7 @@
     background-position: right -80px center;
     background-size: contain;
     background-position-y: 50px;
-    transition: 3s ease-in-out;
+    transition: 5s ease-in-out;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -70,26 +71,22 @@
     @keyframes animate {
       0%,
       90% {
-        background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
+        background-image: url(../assets/hero.png);
         background-size: contain;
       }
-      20%,
-      39% {
+      20% {
         background-image: url(../assets/hero.png);
         //background-position-y: 50px;
       }
-      40%,
-      59% {
+      40% {
         background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
         background-size: contain;
       }
-      60%,
-      79% {
+      60% {
         background-image: url(../assets/hero.png);
         //background-position-y: 50px;
       }
-      80%,
-      99% {
+      80% {
         background-image: url(../assets/pexels-suliman-sallehi-1704488-removebg-preview.png);
         background-size: contain;
       }
@@ -627,6 +624,10 @@
 
   .grow {
     &_box {
+      background-size: 100% 90% !important;
+      background-position: right 10px center !important;
+      background-position-y: 70px !important;
+      opacity: 1;
       h1 {
         font-size: 20px;
         width: 60% !important;
@@ -635,6 +636,7 @@
       }
       p {
         width: 65%;
+        color: #303030;
       }
       &--input {
         input[type="text"] {
@@ -704,4 +706,7 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
 }

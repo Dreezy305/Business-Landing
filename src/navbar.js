@@ -17,7 +17,7 @@ function Navbar() {
             {/*Navbar*/}
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler mobile-toggle"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -28,10 +28,10 @@ function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end d-sm-inline"
+            class="collapse navbar-collapse justify-content-end d-sm-inline mobile-collapse"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav justify-content-space-evenly py-2">
+            <div class="navbar-nav justify-content-space-evenly mobile py-2">
               <a class="nav-link active " aria-current="page" href="#">
                 Timeline
               </a>
