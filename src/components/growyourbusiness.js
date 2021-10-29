@@ -42,14 +42,14 @@ function GrowYourBusiness() {
           <FontAwesomeIcon
             icon="quote-left"
             color="#FF6634"
-            className="position-absolute rightQuote"
+            className="position-absolute rightQuote rightQuoteB"
           />
           <FontAwesomeIcon
             icon="quote-right"
             color="#FF6634"
             className="leftQuote position-absolute"
           />
-          <p className="">
+          <p className="Quote">
             A life spent making mistakes is not only more honorable, but more
             useful than a life spent doing nothing.
           </p>

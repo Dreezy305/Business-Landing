@@ -54,6 +54,10 @@
   .alreadySignedIn {
     font-size: 12px !important;
   }
+  .rightQuote {
+    margin: auto !important;
+    margin-left: -21px !important;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -85,6 +89,10 @@
   .footer_img {
     margin-left: 32px !important;
   }
+  .rightQuoteB {
+    margin: auto !important;
+    margin-left: -21px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -102,17 +110,13 @@
   .App {
     overflow: hidden;
   }
-}
 
-/*@media screen and (max-width: 812px) {
-  .mobile-toggle {
-    display: none;
+  .Quote {
+    margin: 3px !important;
   }
-  .mobile-collapse {
-    display: flex !important;
-    flex-direction: row;
+
+  .rightQuoteB {
+    margin: auto !important;
+    margin-left: -21px !important;
   }
-  .mobile {
-    display: contents;
-  }
-}*/
+}
