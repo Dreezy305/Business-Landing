@@ -17,24 +17,24 @@ function Featured() {
       review: "sexual assault",
       company: "Google",
       pic: Ellipse1,
-      rating: 4,
+      rating: 2,
     },
-    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2, rating: 5 },
+    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2, rating: 2 },
     { id: 3, review: "racism", company: "Google", pic: Ellipse3, rating: 2 },
     {
       id: 4,
       review: "sexual assault",
       company: "Starbuck",
       pic: Ellipse4,
-      rating: 4,
+      rating: 2,
     },
-    { id: 5, review: "racism", company: "Facebook", pic: Ellipse5, rating: 4 },
-    { id: 6, review: "racism", company: "Google", pic: Ellipse6, rating: 4 },
+    { id: 5, review: "racism", company: "Facebook", pic: Ellipse5, rating: 2 },
+    { id: 6, review: "racism", company: "Google", pic: Ellipse6, rating: 2 },
   ];
 
   const renderStars = (stars) => {
     const starsArray = [1, 2, 3, 4, 5];
-    const numberOfFilledStars = starsArray.slice(0, 5 - stars);
+    const numberOfFilledStars = starsArray.slice(0, stars);
     const numberAlt = (stars = 2 ? starsArray.slice(0, 5 - 3) : []);
     const numberOfOpenStars = (stars = 4 ? starsArray.slice(0, 5 - stars) : []);
     const numberOfHalf = (stars = 5 ? starsArray.slice(0, 4 - 3) : []);
@@ -103,7 +103,7 @@ function Featured() {
                     <div className="d-flex flex-row">
                       {/*<img src={Star} className="me-1" alt="..." />*/}
                       {renderStars(item.rating)}
-                      <span className="fw-bold">4.0</span>
+                      <span className="fw-bold ms-1">4.0</span>
                     </div>
                     <p class="card-text text-left mt-2">
                       Great place to work with the good work culture and people
