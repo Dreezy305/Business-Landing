@@ -10,7 +10,7 @@ function Footer() {
     { id: 3, icon: Linkedln, styles: { zIndex: "10" } },
   ];
   return (
-    <section className="footer mt-5 pt-5">
+    <footer className="footer mt-5 pt-5">
       <div className="container ">
         <div className="row footer_row">
           <div className="col-md-6 footer_col1 pt-5 pb-4">
@@ -25,6 +25,7 @@ function Footer() {
               <span>{new Date().getFullYear()}</span>
             </p>
           </div>
+
           <div className="col-lg-2 footer_col2 footer-subheader pt-5">
             <h5 className="mb-4">Company</h5>
             <ul class="list-inline company-list">
@@ -34,7 +35,7 @@ function Footer() {
               <li>Privacy Policy</li>
             </ul>
           </div>
-          <div className="col-lg-2 footer_col2 footer-subheader2 pt-5">
+          <div className="col-lg-2 col-md-6 footer_col2 footer-subheader2 pt-5">
             <h5 className="mb-4">Features</h5>
             <ul class="list-inline company-list">
               <li>Timeline</li>
@@ -43,7 +44,7 @@ function Footer() {
               <li>Sign In</li>
             </ul>
           </div>
-          <div className="col-lg-2 footer_col2 pt-5">
+          <div className="col-lg-2 col-md-6 footer_col2 pt-5">
             <h5 className="mb-4">Contact Us</h5>
             <ul class="list-inline company-list">
               <li>Inquiry@thaapp.com</li>
@@ -54,7 +55,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-row footer_img pb-4 ">
+
+      <div className="d-flex flex-row footer_img footSocials pb-4 ">
         {social.map((item) => (
           <img
             src={item.icon}
@@ -64,7 +66,7 @@ function Footer() {
           />
         ))}
       </div>
-    </section>
+    </footer>
   );
 }
 

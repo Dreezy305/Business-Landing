@@ -80,12 +80,21 @@
     left: 82% !important;
     top: 15% !important;
   }
+
+  .footer_img {
+    margin-left: 32px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .App {
     overflow: hidden;
   }
+  /*.footerSocials {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-left: 32px !important;
+  }*/
 }
 
 @media screen and (max-width: 640px) {
@@ -93,3 +102,16 @@
     overflow: hidden;
   }
 }
+
+/*@media screen and (max-width: 812px) {
+  .mobile-toggle {
+    display: none;
+  }
+  .mobile-collapse {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .mobile {
+    display: contents;
+  }
+}*/

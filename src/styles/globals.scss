@@ -736,11 +736,16 @@
   .advert {
     &_row {
       display: grid;
-      //flex-direction: row;
-      //justify-content: space-evenly !important;
     }
     &_card {
       margin-bottom: 20px;
+    }
+  }
+
+  .company {
+    &_box {
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
     }
   }
 }
