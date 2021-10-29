@@ -599,6 +599,17 @@
       }
     }
   }
+  .footer {
+    &_col1 {
+      p {
+        font-size: 11px;
+        width: 100%;
+        margin: 0px;
+        text-align: justify;
+        margin-top: -100px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 720px) {

@@ -18,7 +18,7 @@ function Footer() {
               This platform for minority groups to express their opinions on
               employment, workplace experiences and rate employers.{" "}
             </p>
-            <div className="d-flex flex-row pb-3 mb-3">
+            <div className="d-flex flex-row pb-3 mb-3 footer_socials">
               {social.map((item) => (
                 <img
                   src={item.icon}
@@ -28,7 +28,7 @@ function Footer() {
                 />
               ))}
             </div>
-            <p className="footer_col1--p mb-2">
+            <p className="footer_col1--p footer_copy mb-2">
               <span className="me-1">&copy;</span>
               <span className="me-1">Copyright</span>
               <span>{new Date().getFullYear()}</span>
