@@ -620,6 +620,59 @@
     &_row {
       text-align-last: center;
     }
+    &_col2 {
+      margin-top: 0;
+    }
+  }
+
+  .grow {
+    &_box {
+      h1 {
+        font-size: 20px;
+        width: 60% !important;
+        line-height: initial;
+        z-index: 55;
+      }
+      p {
+        width: 65%;
+      }
+      &--input {
+        input[type="text"] {
+          width: 250px !important;
+          margin-left: -7px;
+          padding-left: 20px !important;
+        }
+        button {
+          width: 90px !important;
+          margin: auto;
+          margin-top: 8px;
+          height: 55px;
+          right: 6%;
+        }
+      }
+      &--quote {
+        margin: 25px !important;
+        width: 450px !important;
+      }
+    }
+  }
+
+  .bgImage1 {
+    display: none;
+  }
+
+  .bgImage2 {
+    top: 20%;
+    left: 68%;
+  }
+
+  .rightQuote {
+    margin: auto;
+    left: 1% !important;
+  }
+
+  .leftQuote {
+    left: 55% !important;
   }
 }
 

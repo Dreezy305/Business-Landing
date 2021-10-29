@@ -51,6 +51,9 @@
     margin-bottom: 20px !important;
     justify-content: center;
   }
+  .alreadySignedIn {
+    font-size: 12px !important;
+  }
 }
 
 @media screen and (max-width: 720px) {

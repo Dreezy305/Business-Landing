@@ -31,7 +31,7 @@ function GrowYourBusiness() {
               />
               <button type="button">Search</button>
             </div>
-            <p className="mt-3 grow_box--p">
+            <p className="mt-3 grow_box--p alreadySignedIn">
               <span className="me-1">Already have an account?</span>
               <span>Sign In</span>
             </p>
