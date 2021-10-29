@@ -522,6 +522,82 @@
   }
 
   .subscribe {
+    white-space: nowrap !important;
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      width: 300px !important;
+      font-size: 12px;
+      padding-left: 7px;
+      white-space: break-spaces;
+      padding-right: 42px;
+      text-align: justify;
+    }
+    &_row {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-evenly !important;
+      input {
+        width: 270px !important;
+        margin-right: 30px !important;
+      }
+      button {
+        margin-top: 20px !important;
+      }
+    }
+    &_mail {
+      background-position: right 109px center;
+      background-size: 172px 128%;
+      z-index: 100;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .company {
+    &_box {
+      display: grid;
+      img {
+        width: 120px;
+        &:last-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .advert_card {
+    margin-bottom: 30px;
+  }
+
+  .getStarted {
+    height: fit-content;
+    &_row {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-items: center;
+    }
+    h1 {
+      font-size: 12px;
+      line-height: normal;
+    }
+    &_btn {
+      background-size: contain;
+      background-position: right 100px center;
+
+      margin-top: -80px;
+      margin-left: 82px;
+      margin-bottom: 30px;
+      button {
+        width: 120px !important;
+        white-space: nowrap;
+        font-size: 10px;
+        padding-left: 9px !important;
+        padding-right: 10px !important;
+      }
+    }
   }
 }
 

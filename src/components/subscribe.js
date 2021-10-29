@@ -12,7 +12,7 @@ function Subscribe() {
               distribution of letters, as opposed to using 'Content here,
               content here
             </p>
-            <div className="d-flex flex-row mt-2">
+            <div className="d-flex flex-row mt-2 subscribe_row">
               <input
                 type="text"
                 placeholder="Enter a valid email address"

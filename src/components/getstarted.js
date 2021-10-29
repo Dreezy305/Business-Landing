@@ -4,7 +4,7 @@ function GetStarted() {
   return (
     <section className="mt-5 pt-5 mb-5 pb-5">
       <div className="container getStarted">
-        <div className="row justify-content-around">
+        <div className="row justify-content-around getStarted_row">
           <div className="col-md-7">
             <h1 className="p-5">
               Get started today sign up and start reveiwing business.
