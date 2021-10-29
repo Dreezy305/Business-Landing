@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 576px) {
   .App {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
   .featuredBottom {
@@ -42,28 +42,15 @@
     background: none !important;
     box-shadow: none !important;
   }
-  /*.featuredBottom > img {
-    margin-top: 32px !important;
-  }
-  .featuredBottom > h5 {
-    margin-top: 31px !important;
-    margin-right: 146px !important;
-  }*/
-  /*.featuredBottom > p {
-    padding-bottom: 20px;
-  }*/
 
   .footer_copy {
     text-align: center !important;
-    margin-bottom: 20px !important;
+    margin-top: 5px !important;
   }
   .footer_socials {
     margin-bottom: 20px !important;
     justify-content: center;
   }
-  /*.footer_socials > img {
-    margin-top: -1px !important;
-  }*/
 }
 
 @media screen and (max-width: 720px) {
@@ -79,6 +66,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .App {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .App {
     overflow: hidden;
   }
