@@ -9,7 +9,7 @@ function Advertise() {
   return (
     <section className="mt-5 py-5 mb-5 pb-5">
       <div className="container advert pb-3">
-        <div className="row justify-content-evenly">
+        <div className="row justify-content-evenly advert_row">
           {advertArray.map((item) => (
             <div className="card advert_card position-relative w-25">
               <div className="card-body">

@@ -732,4 +732,15 @@
   .bgImage1 {
     left: 77% !important;
   }
+
+  .advert {
+    &_row {
+      display: grid;
+      //flex-direction: row;
+      //justify-content: space-evenly !important;
+    }
+    &_card {
+      margin-bottom: 20px;
+    }
+  }
 }
