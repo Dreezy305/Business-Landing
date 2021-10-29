@@ -488,5 +488,20 @@
   }
 
   .featured {
+    p {
+      width: 90%;
+      margin: auto;
+    }
+    &_card {
+      width: 90%;
+      p {
+        margin: 0;
+      }
+      &--mid {
+      }
+    }
+  }
+
+  .subscribe {
   }
 }
