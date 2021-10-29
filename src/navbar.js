@@ -1,7 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
 
 function Navbar() {
+  useEffect(() => {
+    const button = document.querySelector("#menu-button");
+    const menu = document.querySelector("#menu");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hide");
+    });
+  }, []);
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
@@ -19,6 +27,7 @@ function Navbar() {
           <button
             class="navbar-toggler mobile-toggle"
             type="button"
+            id="menu-button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
@@ -28,10 +37,13 @@ function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end d-sm-inline mobile-collapse"
-            id="navbarNavAltMarkup"
+            class="collapse navbar-collapse justify-content-end d-sm-inline hide mobile-collapse"
+            id="navbarNavAltMarkup menu"
           >
-            <div class="navbar-nav justify-content-space-evenly mobile py-2">
+            <div
+              class="navbar-nav justify-content-space-evenly mobile py-2 hide"
+              id="menu"
+            >
               <a class="nav-link active " aria-current="page" href="#">
                 Timeline
               </a>

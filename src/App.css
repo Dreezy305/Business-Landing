@@ -70,7 +70,7 @@
   .App {
     overflow: hidden;
   }
-  /*.mobile-toggle {
+  .mobile-toggle {
     display: none;
   }
   .mobile-collapse {
@@ -79,7 +79,7 @@
   }
   .mobile {
     display: contents;
-  }*/
+  }
   .bgImage2 {
     position: absolute !important;
     left: 82% !important;
@@ -104,6 +104,22 @@
     flex-direction: row !important;
     margin-left: 32px !important;
   }*/
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-toggle {
+    display: block;
+  }
+  .mobile-collapse {
+    display: inline !important;
+    /*flex-direction: row;*/
+  }
+  .mobile {
+    display: grid;
+  }
+  .hide {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
