@@ -112,7 +112,6 @@
   }
   .mobile-collapse {
     display: inline !important;
-    /*flex-direction: row;*/
   }
   .mobile {
     display: grid;
