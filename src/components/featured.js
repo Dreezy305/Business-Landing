@@ -45,7 +45,7 @@ function Featured() {
               {reviews.map((item) => (
                 <div className="card featured_card p-2 mb-5">
                   <div class="card-body">
-                    <div className="d-flex flex-row">
+                    <div className="d-flex flex-row align-items-baseline mt-auto">
                       <StarRatings
                         rating={item.rating}
                         starDimension="11px"
