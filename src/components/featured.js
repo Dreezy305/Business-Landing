@@ -1,7 +1,6 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
 
-import Star from "../assets/star.svg";
 import Briefcase from "../assets/briefcase.svg";
 import Ellipse1 from "../assets/Ellipse1.png";
 import Ellipse2 from "../assets/Ellipse2.png";
@@ -9,8 +8,6 @@ import Ellipse3 from "../assets/Ellipse3.png";
 import Ellipse4 from "../assets/Ellipse4.png";
 import Ellipse5 from "../assets/Ellipse5.png";
 import Ellipse6 from "../assets/Ellipse6.png";
-import unfilledstar from "../assets/unfilledstar.svg";
-import Bistar from "../assets/bistar.svg";
 
 function Featured() {
   const reviews = [
@@ -34,60 +31,6 @@ function Featured() {
     { id: 6, review: "racism", company: "Google", pic: Ellipse6, rating: 2 },
   ];
 
-  const renderStars = (stars) => {
-    const starsArray = [1, 2, 3, 4, 5];
-    const numberOfFilledStars = starsArray.slice(0, stars);
-    const numberAlt = (stars = 2 ? starsArray.slice(0, 5 - 3) : []);
-    const numberOfOpenStars = (stars = 4 ? starsArray.slice(0, 5 - stars) : []);
-    const numberOfHalf = (stars = 5 ? starsArray.slice(0, 4 - 3) : []);
-    //const otherNumber = numberOfFilledStars = 2 ? starsArray.slice(0, 2) : [];
-
-    return (
-      <>
-        {numberOfFilledStars.map((item, index) => (
-          <img
-            // key={index}
-            src={Star}
-            alt="star_filled_icon"
-            className="me-1"
-          />
-        ))}
-        {numberOfFilledStars.map((item, index) => (
-          <img
-            // key={index}
-            src={Star}
-            alt="star_filled_icon"
-            className="me-1"
-          />
-        ))}
-        {/*{numberOfOpenStars.map((item, index) => (
-          <img
-            // key={index}
-            src={unfilledstar}
-            alt="star_filled_icon"
-            className="me-1"
-          />
-        ))}*/}
-        {/*{otherNumber.map((item, index) => (
-          <img
-            // key={index}
-            src={unfilledstar}
-            alt="star_filled_icon"
-            className="me-1"
-          />
-        ))}*/}
-        {/*{numberOfHalf.map((item, index) => (
-          <img
-            // key={index}
-            src={Bistar}
-            alt="star_filled_icon"
-            className="me-1"
-          />
-        ))}*/}
-      </>
-    );
-  };
-
   return (
     <section className="mt-5 pt-5">
       <div className="container featured">
@@ -103,8 +46,6 @@ function Featured() {
                 <div className="card featured_card p-2 mb-5">
                   <div class="card-body">
                     <div className="d-flex flex-row">
-                      {/*<img src={Star} className="me-1" alt="..." />*/}
-                      {/*{renderStars(item.rating)}*/}
                       <StarRatings
                         rating={item.rating}
                         starDimension="10px"
