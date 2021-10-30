@@ -48,7 +48,7 @@ function Featured() {
                     <div className="d-flex flex-row">
                       <StarRatings
                         rating={item.rating}
-                        starDimension="10px"
+                        starDimension="11px"
                         starSpacing="3px"
                         starRatedColor="#FF6634"
                       />
