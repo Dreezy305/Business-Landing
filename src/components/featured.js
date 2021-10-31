@@ -18,7 +18,7 @@ function Featured() {
       pic: Ellipse1,
       rating: 4,
     },
-    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2, rating: 4.5 },
+    { id: 2, review: "nepotism", company: "Apple", pic: Ellipse2, rating: 4.7 },
     { id: 3, review: "racism", company: "Google", pic: Ellipse3, rating: 2 },
     {
       id: 4,
@@ -45,7 +45,7 @@ function Featured() {
               {reviews.map((item) => (
                 <div className="card featured_card p-2 mb-5">
                   <div class="card-body">
-                    <div className="d-flex flex-row align-items-baseline mt-auto">
+                    <div className="d-flex flex-row align-items-baseline ">
                       <StarRatings
                         rating={item.rating}
                         starDimension="11px"

@@ -49,9 +49,9 @@ function GrowYourBusiness() {
             color="#FF6634"
             className="leftQuote position-absolute"
           />
-          <p className="Quote">
+          <p className="Quote" id="p">
             A life spent making mistakes is not only more honorable, but more
-            useful than a life spent doing nothing.
+            useful than a life spent doing nothing
           </p>
         </div>
       </div>
