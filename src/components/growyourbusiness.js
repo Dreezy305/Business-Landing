@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import TextTransition, { presets } from "react-text-transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "../assets/card.png";
 import Card2 from "../assets/card2.png";
 import Card3 from "../assets/card3.png";
 
 function GrowYourBusiness() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
+  const TEXTS = [
+    "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing",
+    "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference",
+  ];
+
   return (
     <section className="mt-3 mb-5 pb-5 grow">
       <div className="container position-relative grow_box">
@@ -50,8 +66,11 @@ function GrowYourBusiness() {
             className="leftQuote position-absolute"
           />
           <p className="Quote" id="p">
-            A life spent making mistakes is not only more honorable, but more
-            useful than a life spent doing nothing
+            <TextTransition
+              text={TEXTS[index % TEXTS.length]}
+              springConfig={presets.wobbly}
+              delay={3000}
+            />
           </p>
         </div>
       </div>
