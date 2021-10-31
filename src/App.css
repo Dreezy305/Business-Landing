@@ -32,30 +32,6 @@
   content: url(/src/assets/quote.svg);
 }
 
-/*#p {
-  transition: 5s linear;
-
-  animation-name: animate;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-
-  @keyframes animate {
-    0% {
-      content: "Whatever the mind of man can conceive and believe, it can achieve";
-    }
-    50% {
-      content: "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference";
-    }
-    100% {
-      content: "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.";
-    }
-  }
-}*/
-
-/*#p::after {
-  content: "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing";
-}*/
-
 @media screen and (max-width: 576px) {
   .App {
     overflow: hidden !important;
