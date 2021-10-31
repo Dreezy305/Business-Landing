@@ -69,7 +69,6 @@ function GrowYourBusiness() {
             <TextTransition
               text={TEXTS[index % TEXTS.length]}
               springConfig={presets.wobbly}
-              delay={3000}
             />
           </p>
         </div>
